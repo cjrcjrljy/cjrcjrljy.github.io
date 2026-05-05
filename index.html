@@ -158,9 +158,46 @@
                     </svg>
 					skills
 				</div>
-				<div class="skill">
-					<img id="skillPc" src="./static/svg/skillPc.svg" alt="" srcset="">
-					<img id="skillWap" src="./static/svg/skillWap.svg" alt="" srcset="">
+				<style>
+					.custom-skills {
+						display: flex;
+						flex-wrap: wrap;
+						gap: 12px;
+						margin-top: 15px;
+						margin-bottom: 30px;
+					}
+					.custom-skill-badge {
+						background: linear-gradient(135deg, rgba(147, 112, 219, 0.1), rgba(106, 90, 205, 0.1));
+						color: #6a5acd;
+						border: 1px solid rgba(106, 90, 205, 0.2);
+						padding: 8px 18px;
+						border-radius: 20px;
+						font-size: 14px;
+						font-weight: 600;
+						letter-spacing: 0.5px;
+						transition: all 0.3s ease;
+						cursor: default;
+					}
+					html[data-theme="dark"] .custom-skill-badge {
+						background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(200, 200, 200, 0.05));
+						color: #e0e0e0;
+						border: 1px solid rgba(255, 255, 255, 0.2);
+					}
+					.custom-skill-badge:hover {
+						transform: translateY(-3px);
+						box-shadow: 0 4px 10px rgba(106, 90, 205, 0.15);
+						background: #6a5acd;
+						color: #fff;
+						border-color: transparent;
+					}
+				</style>
+				<div class="custom-skills">
+					<div class="custom-skill-badge">C++</div>
+					<div class="custom-skill-badge">C</div>
+					<div class="custom-skill-badge">Python</div>
+					<div class="custom-skill-badge">深度学习</div>
+					<div class="custom-skill-badge">Unity</div>
+					<div class="custom-skill-badge">图形学</div>
 				</div>
 			</content>
 		</div>
